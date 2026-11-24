@@ -1,0 +1,7 @@
+services:
+  openclaw-bridge:
+    build: .
+    container_name: openclaw-bridge
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
